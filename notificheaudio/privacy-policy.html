@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informativa sulla Privacy — Notifiche Audio</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #1e293b;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 32px 20px;
+            background-color: #f8fafc;
+        }
+        .card {
+            background: #ffffff;
+            padding: 32px;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+        }
+        h1 {
+            color: #0f172a;
+            margin-top: 0;
+        }
+        h2 {
+            color: #334155;
+            margin-top: 28px;
+            border-bottom: 1px solid #e2e8f0;
+            padding-bottom: 6px;
+        }
+        .badge {
+            display: inline-block;
+            background: #ede9fe;
+            color: #4c1d95;
+            padding: 4px 10px;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+        footer {
+            margin-top: 32px;
+            font-size: 0.85rem;
+            color: #64748b;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div class="card">
+    <span class="badge">Ultimo aggiornamento: Novembre 2026</span>
+    <h1>Informativa sulla Privacy — Notifiche Audio</h1>
+    <p>
+        La presente Informativa sulla Privacy descrive come l'applicazione Android
+        <strong>Notifiche Audio</strong> (pacchetto <code>it.vince.notificheaudio</code>) gestisce le informazioni degli utenti.
+    </p>
+
+    <h2>1. Raccolta e Condivisione dei Dati</h2>
+    <p>
+        <strong>Notifiche Audio non raccoglie, non memorizza su server esterni, non trasmette e non condivide alcun dato personale.</strong>
+        L'applicazione funziona interamente in locale (offline) sul dispositivo dell'utente e <strong>non richiede il permesso Internet</strong>.
+        Tutte le preferenze (app silenziate, livelli di privacy, orari Non Disturbare, filtri parole chiave e stato PRO) vengono salvate esclusivamente nella memoria locale del dispositivo tramite Android DataStore.
+    </p>
+
+    <h2>2. Accesso alle Notifiche (NotificationListenerService)</h2>
+    <p>
+        Per funzionare, l'applicazione richiede l'autorizzazione di sistema
+        <strong>Accesso alle notifiche</strong> (<code>BIND_NOTIFICATION_LISTENER_SERVICE</code>), concessa esplicitamente dall'utente nelle Impostazioni di Android.
+    </p>
+    <ul>
+        <li>Il nome dell'app, il titolo e il testo delle notifiche ricevute vengono elaborati <strong>esclusivamente in tempo reale e in locale</strong> tramite il sintetizzatore vocale (Text-to-Speech) del dispositivo.</li>
+        <li>Il contenuto delle notifiche non viene mai salvato in modo permanente, né inviato a server esterni o condiviso con terze parti.</li>
+        <li>L'utente può revocare il permesso in qualsiasi momento dalle Impostazioni di Android.</li>
+    </ul>
+
+    <h2>3. Elenco delle Applicazioni Installate</h2>
+    <p>
+        L'applicazione legge localmente l'elenco delle app dotate di icona di avvio (tramite query Android standard per intent <code>LAUNCHER</code>) esclusivamente per consentire all'utente di scegliere quali app annunciare, silenziare o configurare con livelli di privacy personalizzati. Nessun elenco viene trasmesso all'esterno del dispositivo.
+    </p>
+
+    <h2>4. Acquisti In-App (Google Play Billing)</h2>
+    <p>
+        Notifiche Audio offre un acquisto in-app opzionale una tantum (<strong>Notifiche Audio PRO</strong>) gestito interamente attraverso il sistema ufficiale <strong>Google Play Billing</strong>.
+        Tutti i dati di pagamento e fatturazione sono trattati esclusivamente da Google LLC secondo le
+        <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Norme sulla privacy di Google</a>.
+        Lo sviluppatore non ha accesso a numeri di carta di credito o dati bancari dell'utente.
+    </p>
+
+    <h2>5. Pubblicità e Tracciamento</h2>
+    <p>
+        Notifiche Audio <strong>non contiene annunci pubblicitari</strong> e non integra SDK di analisi, tracciamento o profilazione di terze parti.
+    </p>
+
+    <h2>6. Privacy dei Minori</h2>
+    <p>
+        L'applicazione non raccoglie consapevolmente informazioni personali da nessuno, inclusi i minori di 13 anni.
+    </p>
+
+    <h2>7. Contatti</h2>
+    <p>
+        Per qualsiasi domanda o chiarimento in merito alla presente Informativa sulla Privacy, è possibile contattare lo sviluppatore all'indirizzo email:<br>
+        <strong>baccudoku.support@gmail.com</strong>
+    </p>
+
+    <footer>
+        &copy; 2026 Notifiche Audio — Tutti i diritti riservati.
+    </footer>
+</div>
+</body>
+</html>
